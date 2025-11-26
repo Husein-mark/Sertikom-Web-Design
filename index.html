@@ -20,6 +20,9 @@
     <!-- CSS -->
      <link rel="stylesheet" href="dist/css/style.css">
 
+     <!-- Swiper -->
+     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
 
 </head>
 <body>
@@ -41,15 +44,15 @@
                 </li>
 
                 <li class="nav-item">
-                <a class="nav-link mx-1 fs-5" href="#about">Layanan</a>
+                <a class="nav-link mx-1 fs-5" href="#service">Layanan</a>
                 </li>
 
                 <li class="nav-item">
-                <a class="nav-link mx-1 fs-5" href="#project">Tentang Kami</a>
+                <a class="nav-link mx-1 fs-5" href="#about">Tentang Kami</a>
                 </li>
 
                 <li class="nav-item">
-                <a class="nav-link mx-1 fs-5" href="#service">Kontak</a>
+                <a class="nav-link mx-1 fs-5" href="#contact">Kontak</a>
                 </li>
                 
             </ul>
@@ -67,11 +70,14 @@
   <!-- Header -->
         <div class="hero d-flex align-items-center">
             <div class="header">
-                <h3 class="title">Membantu bisnis menemukan solusi digital terbaik<br> melalui analisis mendalam, strategi tepat, dan implementasi <br>teknologi yang efektif.</h3>
+                <h3 class="persen text-light">80%</h3>
+                <h3 class="project text-light">Project Diselesaikan</h3>
+                <h3 class="title">Kami secara konsisten menyampaikan proyek tepat waktu dengan standar kualitas yang luar biasa.</h3>
             </div>
             <div class="deskripsi">
                 <h1 class="text fw-bold">Transformasikan Bisnis <br>dengan Konsultasi <br>Teknologi VisiDigital</h1>
-                <div class="kotakWA mt-4">
+                <h3 class="text1 fs-5">Membantu bisnis menemukan solusi digital terbaik<br> melalui analisis mendalam, strategi tepat, dan implementasi <br>teknologi yang efektif.</h3>
+                <div class="kotakWA">
                     <h3 class="daftar1 fs-5 text-light"></i>Konsultasi Gratis</h3>
                     &nbsp;
                     &nbsp;
@@ -83,86 +89,282 @@
   <!-- Header -->
 
   <!-- Klien -->
-        <div class="partner">
+        <!-- <div class="partner">
             <h3 class="partner-head">Customer Kami</h3>
             <p>Setiap Layanan yang kami kembangkan menghasilkan value bisnis yang membuat<br> mereka mempercayakan jasa pembuatan websitenya kepada kami</p>
             <div class="sponsor">
-            <img src="asset/icon/Adidas_Originals_Brand_Logo_PNG-removebg-preview.png" width="13%" height="30%">
-            <img src="asset/icon/download-removebg-preview.png" width="15%" height="30%">
+            <img src="asset/icon/Adidas_Originals_Brand_Logo_PNG-removebg-preview.png">
+            <img src="asset/icon/download-removebg-preview.png" width="13%" height="30%">
             <img src="asset/icon/Herzogenaurach_Puma_Adidas_Logo_PNG-removebg-preview.png" width="13%" height="30%">
             <img src="asset/icon/Under_Armour_Logo_PNG-removebg-preview.png" width="20%" height="30%">
             <h3 class="Perusahaan"> dan 40+ Perusahaan lainnya </h3>
             </div>
+        </div> -->
+
+        <div class="swiper mySwiper">
+            <div class="swiper-wrapper">
+            <div class="swiper-slide"><img src="asset/icon/Adidas_Originals_Brand_Logo_PNG-removebg-preview.png"><img src="asset/icon/download-removebg-preview.png"><img src="asset/icon/Herzogenaurach_Puma_Adidas_Logo_PNG-removebg-preview.png"><img src="asset/icon/Under_Armour_Logo_PNG-removebg-preview.png"></div>
+            <div class="swiper-slide"><img src="asset/icon/starbuck.png"><img src="asset/icon/toyoa.png"><img src="asset/icon/calvin.png"><img src="asset/icon/Playstation-removebg-preview.png"></div>
+            <div class="swiper-slide"></div>
+            <div class="swiper-slide"></div>
+            </div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
         </div>
   <!-- Klien -->
 
   <!-- Layanan -->
-   <h3>Layanan Kami</h3>
-       <div class="containerlayanan row-cols-lg-3">
-        <div class="layanan">
-            <div class="tekslayanan">
-                <p class="basic">Paket Basic</p>
-                <p style="margin-top: 40px;">Konsultasi Transformasi Digital</p>
+   <div class="py-5" id="service">
+    <div class="container">
+        <h3 class="text-center fw-bold mb-5">Layanan Kami</h3>
 
-                <p class="p">Rp<span>35.000</span>/bln</p>
+        <div class="row g-4 justify-content-center" data-aos="fade-up">
 
-                <p style="margin-top: -5px;">+2 bulan gratis</p>
-                <div class="pilih">
-                    <p>Pilih Paket</p>
+            <!-- Paket Basic -->
+            <div class="col-12 col-md-6 col-lg-4">
+                <div class="card p-4 shadow-sm h-100">
+                    <span class="badge bg-warning text-dark mb-3 w-50 mx-auto">Paket Basic</span>
+                    <h5 class="text-center mb-3">Konsultasi Transformasi Digital</h5>
+
+                    <p class="text-center fs-3 fw-bold">Rp 35.000<span class="fs-6">/bln</span></p>
+                    <p class="text-center">+ 2 bulan gratis</p>
+
+                    <div class="d-grid mb-3">
+                        <button class="btn w-100 text-white fw-bold mb-3"
+                            style="background:#0B1D51;">
+                        Pilih Paket
+                    </button>
+                    </div>
+
+                    <ul class="list-unstyled ms-1">
+                        <li>✔ Chat Langsung</li>
+                        <li>✔ 1 solusi utama</li>
+                        <li>✔ Rekomendasi langkah awal</li>
+                        <li>✔ Follow-Up singkat</li>
+                    </ul>
                 </div>
-                <ul>
-                    <li><i class="fa-solid fa-circle-check mt-4"></i> &nbsp;Chat Langsung</li>
-                    <li><i class="fa-solid fa-circle-check"></i> &nbsp;1 solusi utama</li>
-                    <li><i class="fa-solid fa-circle-check"></i> &nbsp;Rekomendasi langkah awal</li>
-                    <li><i class="fa-solid fa-circle-check"></i> &nbsp;Follow-Up singkat</li>
-                </ul>
-
             </div>
-        </div>
-        <div class="layanan1">
-            <div class="tekslayanan">
-                <p class="basic">Paket Premium&nbsp;<i class="fa-solid fa-crown"></i></p>
-                <p style="margin-top: 40px;">Konsultasi Transformasi Digital</p>
 
-                <p class="p">Rp<span>89.200</span>/bln</p>
+            <!-- Paket Premium -->
+            <div class="col-12 col-md-6 col-lg-4">
+                <div class="card p-4 shadow-sm h-100">
+                    <span class="badge bg-danger mb-3 w-50 mx-auto">Paket Premium</span>
+                    <h5 class="text-center mb-3">Konsultasi Transformasi Digital</h5>
 
-                <p style="margin-top: -5px;">+2 bulan gratis</p>
-                <div class="pilih">
-                    <p>Pilih Paket</p>
+                    <p class="text-center fs-3 fw-bold">Rp 89.200<span class="fs-6">/bln</span></p>
+                    <p class="text-center">+ 2 bulan gratis</p>
+
+                    <div class="d-grid mb-3">
+                        <button class="btn w-100 text-white fw-bold mb-3"
+                            style="background:#0B1D51;">
+                        Pilih Paket
+                    </button>
+                    </div>
+
+                    <ul class="list-unstyled ms-1">
+                        <li>✔ Video Call</li>
+                        <li>✔ Review dokumen (CV, proposal, tugas)</li>
+                        <li>✔ PDF summary</li>
+                        <li>✔ Action plan 7 hari</li>
+                        <li>✔ Voice note motivasi</li>
+                    </ul>
                 </div>
-                <ul>
-                    <li><i class="fa-solid fa-circle-check mt-4"></i> &nbsp;Video Call</li>
-                    <li><i class="fa-solid fa-circle-check"></i> &nbsp;Review dokumen (CV,proposal,tugas,dll)</li>
-                    <li><i class="fa-solid fa-circle-check"></i> &nbsp;PDF summary</li>
-                    <li><i class="fa-solid fa-circle-check"></i> &nbsp;Action plan 7 hari</li>
-                    <li><i class="fa-solid fa-circle-check"></i> &nbsp;Voice note motivasi</li>
-                </ul>
-
             </div>
-        </div>
-        <div class="layanan2">
-            <div class="tekslayanan">
-                <p style="margin-top: 100px;">Modernisasi Infrastruktur</p>
 
-                <p class="p">Rp<span>120.000</span>/bln</p>
+            <!-- Paket Profesional -->
+            <div class="col-12 col-md-6 col-lg-4">
+                <div class="card p-4 shadow-sm h-100">
+                    <span class="badge bg-secondary mb-3 w-50 mx-auto">Paket Profesional</span>
+                    <h5 class="text-center mb-3">Modernisasi Infrastruktur</h5>
 
-                <p style="margin-top: -5px;">+2 bulan gratis</p>
-                <div class="pilih">
-                    <p>Pilih Paket</p>
+                    <p class="text-center fs-3 fw-bold">Rp 120.000<span class="fs-6">/bln</span></p>
+                    <p class="text-center">+ 2 bulan gratis</p>
+
+                    <div class="d-grid mb-3">
+                        <button class="btn w-100 text-white fw-bold mb-3"
+                            style="background:#0B1D51;">
+                        Pilih Paket
+                    </button>
+                    </div>
+
+                    <ul class="list-unstyled ms-1">
+                        <li>✔ Langkah-langkah implementasi</li>
+                        <li>✔ Prioritas pengerjaan</li>
+                        <li>✔ PDF summary</li>
+                        <li>✔ Estimasi waktu</li>
+                        <li>✔ Tahapan migrasi</li>
+                    </ul>
                 </div>
-                <ul>
-                    <li><i class="fa-solid fa-circle-check mt-4"></i> &nbsp;Langkah-langkah implementasi</li>
-                    <li><i class="fa-solid fa-circle-check"></i> &nbsp;Prioritas pengerjaan</li>
-                    <li><i class="fa-solid fa-circle-check"></i> &nbsp;PDF summary</li>
-                    <li><i class="fa-solid fa-circle-check"></i> &nbsp;Estimasi waktu</li>
-                    <li><i class="fa-solid fa-circle-check"></i> &nbsp;Tahapan migrasi</li>
-                </ul>
-
             </div>
+
         </div>
-       </div>
+    </div>
+  </div>
   <!-- Layanan -->
-        
+
+  <!-- Tentang Kami -->
+    <section id="about" class="about-section py-5">
+        <div class="container">
+            <div class="row align-items-center">
+
+                <!-- Gambar -->
+                <div class="col-12 col-lg-6 mb-4 mb-lg-0">
+                    <div class="about-img-box">
+                        <img src="asset/img/photo-1622675363311-3e1904dc1885.jfif" alt="Tentang Kami" class="img-fluid rounded shadow">
+                    </div>
+                </div>
+
+                <!-- Konten -->
+                <div class="col-12 col-lg-6">
+
+                    <h3 class="about-title fw-bold mb-3 text-start">Tentang Kami</h3>
+
+                    <p class="about-text">
+                        VisiDigital adalah perusahaan konsultan teknologi yang berfokus pada 
+                        membantu bisnis bertransformasi secara digital. Kami menghadirkan solusi 
+                        digital modern melalui analisis mendalam, strategi yang tepat, serta 
+                        implementasi teknologi yang efektif untuk meningkatkan efisiensi dan 
+                        daya saing perusahaan Anda.
+                    </p>
+
+                    <p class="about-text">
+                        Dengan tim profesional berpengalaman lebih dari 5 tahun, kami telah 
+                        dipercaya oleh puluhan perusahaan dari berbagai industri untuk 
+                        memberikan solusi teknologi yang berdampak, praktis, dan terukur.
+                    </p>
+
+                    <div class="containerabout shadow-sm">
+                    <ul class="about-list mt-3 ms-1">
+                        <li><i class="fa-solid fa-check"></i> Konsultasi teknologi berbasis data</li>
+                        <li><i class="fa-solid fa-check"></i> Solusi digital sesuai kebutuhan</li>
+                        <li><i class="fa-solid fa-check"></i> Tim ahli dan berpengalaman</li>
+                        <li><i class="fa-solid fa-check"></i> Dukungan dan pendampingan profesional</li>
+                    </ul>
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+    </section>
+  <!-- End Tentang Kami -->
+
+  <!-- FORM KONTAK -->
+    <section id="contact" class="contact-section py-5">
+        <div class="container">
+
+            <h3 class="fw-bold text-center mb-4">Hubungi Kami</h3>
+            <p class="text-center mb-5 text-secondary">
+                Tinggalkan pesan Anda. Tim kami akan segera menghubungi untuk membantu kebutuhan teknologi bisnis Anda.
+            </p>
+
+            <div class="row justify-content-center align-items-start g-4">
+
+                <!-- MAP -->
+                <div class="col-12 col-lg-6">
+                    <div class="map-box shadow-sm rounded overflow-hidden">
+                        <iframe 
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3963.510589986277!2d106.76554157587216!3d-6.583270264356499!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69c4ff2d5ecf4b%3A0x9da488eab0064996!2sSMK%20informatika%20Pesat%20Kota%20Bogor!5e0!3m2!1sen!2sid!4v1764142610650!5m2!1sen!2sid"
+                            width="100%" height="420" style="border:0;" allowfullscreen="" loading="lazy">
+                        </iframe>
+                    </div>
+                </div>
+
+                <!-- FORM -->
+                <div class="col-12 col-lg-6">
+                    <form id="contactForm" class="contact-form shadow-sm p-4 rounded">
+                        
+                        <div class="mb-3">
+                            <label class="form-label">Nama Lengkap</label>
+                            <input type="text" id="nama" class="form-control" placeholder="Masukkan nama anda">
+                            <small class="text-danger d-none error-nama">Nama wajib diisi.</small>
+                        </div>
+
+                        <div class="mb-3">
+                            <label class="form-label">Email</label>
+                            <input type="text" id="email" class="form-control" placeholder="contoh@gmail.com">
+                            <small class="text-danger d-none error-email">Email tidak valid.</small>
+                        </div>
+
+                        <div class="mb-3">
+                            <label class="form-label">Pesan</label>
+                            <textarea id="pesan" rows="4" class="form-control" placeholder="Tulis pesan anda"></textarea>
+                            <small class="text-danger d-none error-pesan">Pesan tidak boleh kosong.</small>
+                        </div>
+
+                        <button type="submit" class="btn contact-btn w-100">Kirim Pesan</button>
+                    </form>
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+  <!-- END FORM KONTAK -->
+
+  <!-- FOOTER -->
+    <footer class="footer-section mt-5 pt-5">
+        <div class="container">
+
+            <div class="row">
+
+                <!-- Brand -->
+                <div class="col-12 col-md-6 col-lg-3 mb-4">
+                    <h4 class="footer-brand">VisiDigital</h4>
+                    <p class="footer-text">
+                        Konsultan teknologi yang membantu bisnis bertransformasi secara digital melalui strategi dan implementasi modern.
+                    </p>
+                    <div class="footer-sosmed">
+                        <i class="fa-brands fa-facebook"></i>
+                        <i class="fa-brands fa-instagram"></i>
+                        <i class="fa-brands fa-linkedin"></i>
+                    </div>
+                </div>
+
+                <!-- Navigasi -->
+                <div class="col-12 col-md-6 col-lg-3 mb-4">
+                    <h5 class="footer-title">Navigasi</h5>
+                    <ul class="footer-list ms-1">
+                        <li><a href="#">Beranda</a></li>
+                        <li><a href="#service">Layanan</a></li>
+                        <li><a href="#about">Tentang Kami</a></li>
+                        <li><a href="#contact">Kontak</a></li>
+                    </ul>
+                </div>
+
+                <!-- Layanan -->
+                <div class="col-12 col-md-6 col-lg-3 mb-4">
+                    <h5 class="footer-title">Layanan</h5>
+                    <ul class="footer-list ms-1">
+                        <li><a href="#service">Konsultasi Transformasi Digital</a></li>
+                        <li><a href="#service">Analisis Sistem</a></li>
+                        <li><a href="#service">Modernisasi Infrastruktur</a></li>
+                    </ul>
+                </div>
+
+                <!-- Kontak -->
+                <div class="col-12 col-md-6 col-lg-3 mb-4">
+                    <h5 class="footer-title">Kontak</h5>
+                    <ul class="footer-list">
+                        <li><i class="fa-solid fa-location-dot"></i> Bogor, Indonesia</li>
+                        <li><i class="fa-solid fa-envelope"></i> alwihusein2807@gmail.com</li>
+                        <li><i class="fa-solid fa-phone"></i> 0888-1332-064</li>
+                    </ul>
+                </div>
+
+            </div>
+
+            <hr class="footer-line">
+
+            <p class="footer-copy text-center">
+                © 2025 VisiDigital. All Rights Reserved.
+            </p>
+
+        </div>
+    </footer>
+    <!-- END FOOTER -->
+
+
 
 
     <!-- JavaScript Bootstrap -->
@@ -170,6 +372,21 @@
 
     <!-- JavaScript -->
     <script src="dist/js/script.js"></script>
+
+
+     <!-- Swiper JS -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+  <!-- Initialize Swiper -->
+  <script>
+    var swiper = new Swiper(".mySwiper", {
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
+    });
+  </script>
+
 
 </body>
 </html>
