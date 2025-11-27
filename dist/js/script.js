@@ -60,3 +60,21 @@ document.getElementById("contactForm").addEventListener("submit", function(e) {
         pesan.value = "";
     }
 });
+
+
+const text = "Teknologi VisiDigital";
+let index = 0;
+
+function typeEffect() {
+    const element = document.getElementById("typing");
+    
+    if (index < text.length) {
+        element.innerHTML += text.charAt(index);
+        index++;
+        setTimeout(typeEffect, 100); // kecepatan ketik
+    }
+}
+
+window.onload = typeEffect;
+
+

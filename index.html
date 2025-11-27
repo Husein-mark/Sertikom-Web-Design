@@ -23,6 +23,9 @@
      <!-- Swiper -->
      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
 
+     <!-- Data AOS -->
+      <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
 
 </head>
 <body>
@@ -70,12 +73,17 @@
   <!-- Header -->
         <div class="hero d-flex align-items-center">
             <div class="header">
-                <h3 class="persen text-light">80%</h3>
-                <h3 class="project text-light">Project Diselesaikan</h3>
+                <h3 class="persen">80%</h3>
+                <h3 class="project">Project Diselesaikan</h3>
                 <h3 class="title">Kami secara konsisten menyampaikan proyek tepat waktu dengan standar kualitas yang luar biasa.</h3>
             </div>
             <div class="deskripsi">
-                <h1 class="text fw-bold">Transformasikan Bisnis <br>dengan Konsultasi <br>Teknologi VisiDigital</h1>
+                <h1 class="text fw-bold">
+                    Transformasikan Bisnis <br>
+                    dengan Konsultasi <br>
+                    <span id="typing" class="typing-text"></span>
+                </h1>
+
                 <h3 class="text1 fs-5">Membantu bisnis menemukan solusi digital terbaik<br> melalui analisis mendalam, strategi tepat, dan implementasi <br>teknologi yang efektif.</h3>
                 <div class="kotakWA">
                     <h3 class="daftar1 fs-5 text-light"></i>Konsultasi Gratis</h3>
@@ -88,134 +96,21 @@
         </div>
   <!-- Header -->
 
-  <!-- Klien -->
-        <!-- <div class="partner">
-            <h3 class="partner-head">Customer Kami</h3>
-            <p>Setiap Layanan yang kami kembangkan menghasilkan value bisnis yang membuat<br> mereka mempercayakan jasa pembuatan websitenya kepada kami</p>
-            <div class="sponsor">
-            <img src="asset/icon/Adidas_Originals_Brand_Logo_PNG-removebg-preview.png">
-            <img src="asset/icon/download-removebg-preview.png" width="13%" height="30%">
-            <img src="asset/icon/Herzogenaurach_Puma_Adidas_Logo_PNG-removebg-preview.png" width="13%" height="30%">
-            <img src="asset/icon/Under_Armour_Logo_PNG-removebg-preview.png" width="20%" height="30%">
-            <h3 class="Perusahaan"> dan 40+ Perusahaan lainnya </h3>
-            </div>
-        </div> -->
-
-        <div class="swiper mySwiper">
-            <div class="swiper-wrapper">
-            <div class="swiper-slide"><img src="asset/icon/Adidas_Originals_Brand_Logo_PNG-removebg-preview.png"><img src="asset/icon/download-removebg-preview.png"><img src="asset/icon/Herzogenaurach_Puma_Adidas_Logo_PNG-removebg-preview.png"><img src="asset/icon/Under_Armour_Logo_PNG-removebg-preview.png"></div>
-            <div class="swiper-slide"><img src="asset/icon/starbuck.png"><img src="asset/icon/toyoa.png"><img src="asset/icon/calvin.png"><img src="asset/icon/Playstation-removebg-preview.png"></div>
-            <div class="swiper-slide"></div>
-            <div class="swiper-slide"></div>
-            </div>
-            <div class="swiper-button-next"></div>
-            <div class="swiper-button-prev"></div>
-        </div>
-  <!-- Klien -->
-
-  <!-- Layanan -->
-   <div class="py-5" id="service">
-    <div class="container">
-        <h3 class="text-center fw-bold mb-5">Layanan Kami</h3>
-
-        <div class="row g-4 justify-content-center" data-aos="fade-up">
-
-            <!-- Paket Basic -->
-            <div class="col-12 col-md-6 col-lg-4">
-                <div class="card p-4 shadow-sm h-100">
-                    <span class="badge bg-warning text-dark mb-3 w-50 mx-auto">Paket Basic</span>
-                    <h5 class="text-center mb-3">Konsultasi Transformasi Digital</h5>
-
-                    <p class="text-center fs-3 fw-bold">Rp 35.000<span class="fs-6">/bln</span></p>
-                    <p class="text-center">+ 2 bulan gratis</p>
-
-                    <div class="d-grid mb-3">
-                        <button class="btn w-100 text-white fw-bold mb-3"
-                            style="background:#0B1D51;">
-                        Pilih Paket
-                    </button>
-                    </div>
-
-                    <ul class="list-unstyled ms-1">
-                        <li>✔ Chat Langsung</li>
-                        <li>✔ 1 solusi utama</li>
-                        <li>✔ Rekomendasi langkah awal</li>
-                        <li>✔ Follow-Up singkat</li>
-                    </ul>
-                </div>
-            </div>
-
-            <!-- Paket Premium -->
-            <div class="col-12 col-md-6 col-lg-4">
-                <div class="card p-4 shadow-sm h-100">
-                    <span class="badge bg-danger mb-3 w-50 mx-auto">Paket Premium</span>
-                    <h5 class="text-center mb-3">Konsultasi Transformasi Digital</h5>
-
-                    <p class="text-center fs-3 fw-bold">Rp 89.200<span class="fs-6">/bln</span></p>
-                    <p class="text-center">+ 2 bulan gratis</p>
-
-                    <div class="d-grid mb-3">
-                        <button class="btn w-100 text-white fw-bold mb-3"
-                            style="background:#0B1D51;">
-                        Pilih Paket
-                    </button>
-                    </div>
-
-                    <ul class="list-unstyled ms-1">
-                        <li>✔ Video Call</li>
-                        <li>✔ Review dokumen (CV, proposal, tugas)</li>
-                        <li>✔ PDF summary</li>
-                        <li>✔ Action plan 7 hari</li>
-                        <li>✔ Voice note motivasi</li>
-                    </ul>
-                </div>
-            </div>
-
-            <!-- Paket Profesional -->
-            <div class="col-12 col-md-6 col-lg-4">
-                <div class="card p-4 shadow-sm h-100">
-                    <span class="badge bg-secondary mb-3 w-50 mx-auto">Paket Profesional</span>
-                    <h5 class="text-center mb-3">Modernisasi Infrastruktur</h5>
-
-                    <p class="text-center fs-3 fw-bold">Rp 120.000<span class="fs-6">/bln</span></p>
-                    <p class="text-center">+ 2 bulan gratis</p>
-
-                    <div class="d-grid mb-3">
-                        <button class="btn w-100 text-white fw-bold mb-3"
-                            style="background:#0B1D51;">
-                        Pilih Paket
-                    </button>
-                    </div>
-
-                    <ul class="list-unstyled ms-1">
-                        <li>✔ Langkah-langkah implementasi</li>
-                        <li>✔ Prioritas pengerjaan</li>
-                        <li>✔ PDF summary</li>
-                        <li>✔ Estimasi waktu</li>
-                        <li>✔ Tahapan migrasi</li>
-                    </ul>
-                </div>
-            </div>
-
-        </div>
-    </div>
-  </div>
-  <!-- Layanan -->
 
   <!-- Tentang Kami -->
     <section id="about" class="about-section py-5">
         <div class="container">
             <div class="row align-items-center">
-
                 <!-- Gambar -->
-                <div class="col-12 col-lg-6 mb-4 mb-lg-0">
+                <div class="col-12 col-lg-6 mb-4 mb-lg-0" data-aos="fade-right">
                     <div class="about-img-box">
                         <img src="asset/img/photo-1622675363311-3e1904dc1885.jfif" alt="Tentang Kami" class="img-fluid rounded shadow">
                     </div>
                 </div>
 
                 <!-- Konten -->
-                <div class="col-12 col-lg-6">
+                <div class="col-12 col-lg-6" data-aos="fade-left">
+
 
                     <h3 class="about-title fw-bold mb-3 text-start">Tentang Kami</h3>
 
@@ -248,6 +143,129 @@
         </div>
     </section>
   <!-- End Tentang Kami -->
+
+  <!-- Layanan -->
+   <div class="py-5" id="service">
+    <div class="container">
+        <h3 class="text-center fw-bold mb-5">Layanan Kami</h3>
+        <section class="py-5">
+        <div class="container text-center">
+            <h2 class="fw-bold mb-2">Paket Konsultasi & Modernisasi Digital</h2>
+            <p class="text-muted mb-5">Pilih paket terbaik untuk membawa bisnis Anda menuju transformasi digital yang lebih efektif.</p>
+
+            <div class="row g-4" data-aos="fade-up">
+
+            <!-- BASIC -->
+            <div class="col-md-4">
+                <div class="card p-4 shadow-sm h-100 pricing-card">
+                <span class="badge  text-dark mb-3 mt-3">Paket Basic</span>
+                <h4 class="fw-bold">Konsultasi Transformasi Digital</h4>
+
+                <p class="display-6 fw-bold mt-3">
+                    Rp 35.000 <span class="fs-6 text-muted">/bln</span>
+                </p>
+                <p class="text-success fw-semibold">+ 2 bulan gratis</p>
+
+                <ul class="list-unstyled text-start mt-3 mb-4 ms-2">
+                    <li>✔ Chat langsung dengan konsultan</li>
+                    <li>✔ 1 solusi utama</li>
+                    <li>✔ Rekomendasi langkah awal</li>
+                    <li>✔ Follow-up singkat 72 jam</li>
+                    <li class="mt-2 fst-italic text-secondary">⭐ Cocok untuk UMKM yang baru mulai digitalisasi</li>
+                </ul>
+
+                <button class="btn btn-dark w-100">Pilih Paket</button>
+                </div>
+            </div>
+
+            <!-- PREMIUM -->
+            <div class="col-md-4">
+                <div class="card p-4 shadow-lg h-100 border-primary pricing-card position-relative highlight-card">
+                <span class="badge mb-3 bg-primary" style=" color: white; width: 35%; padding: 10px; text-align: center; border-radius: 20px; margin-left: 110px;">Paket Premium</span>
+                <h4 class="fw-bold">Konsultasi Transformasi Digital</h4>
+
+                <p class="display-6 fw-bold mt-3">
+                    Rp 89.200 <span class="fs-6 text-muted">/bln</span>
+                </p>
+                <p class="text-success fw-semibold">+ 2 bulan gratis</p>
+
+                <ul class="list-unstyled text-start mt-3 mb-4 ms-2">
+                    <li>✔ Video Call 1-on-1</li>
+                    <li>✔ Review dokumen (CV, proposal, tugas)</li>
+                    <li>✔ Ringkasan PDF khusus</li>
+                    <li>✔ Action plan 7 hari</li>
+                    <li>✔ Voice note arahan & motivasi</li>
+                    <li class="mt-2 fst-italic text-secondary">🔥 Paling direkomendasikan untuk hasil maksimal</li>
+                </ul>
+
+                <button class="btn w-100" style="background-color: #E2852E; color: white;">Pilih Paket</button>
+                </div>
+            </div>
+
+            <!-- PROFESSIONAL -->
+            <div class="col-md-4">
+                <div class="card p-4 shadow-sm h-100 pricing-card">
+                <span class="badge mb-3 text-dark mt-3 ">Paket Profesional</span>
+                <h4 class="fw-bold">Modernisasi Infrastruktur</h4>
+
+                <p class="display-6 fw-bold mt-3">
+                    Rp 120.000 <span class="fs-6 text-muted">/bln</span>
+                </p>
+                <p class="text-success fw-semibold">+ 2 bulan gratis</p>
+
+                <ul class="list-unstyled text-start mt-3 mb-4 ms-2">
+                    <li>✔ Langkah-langkah implementasi</li>
+                    <li>✔ Prioritas pengerjaan</li>
+                    <li>✔ Summary PDF lengkap</li>
+                    <li>✔ Estimasi waktu pengerjaan</li>
+                    <li>✔ Tahapan migrasi sistem</li>
+                    <li class="mt-2 fst-italic text-secondary">🚀 Cocok untuk bisnis yang ingin scale-up</li>
+                </ul>
+
+                <button class="btn btn-dark w-100 mt-3">Pilih Paket</button>
+                </div>
+            </div>
+            </div>
+        </div>
+        </section>
+    </div>
+  </div>
+  <!-- Layanan -->
+
+  <!-- Klien -->
+   <div class="containerklien">
+    <div class="judul">
+        <h3>Klien Kami</h3>
+        <p class="text-muted mb-5" style="text-align: center;">Kami dipercaya oleh berbagai brand ternama<br> untuk mendukung kebutuhan digital mereka. Komitmen kami adalah memberikan solusi terbaik<br> yang dapat mendorong efisiensi, pertumbuhan, dan inovasi bagi setiap klien.</p>
+    </div>
+        <div class="swiper mySwiper">
+            <div class="swiper-wrapper">
+
+
+                <div class="swiper-slide client-slide">
+                    <img src="asset/icon/Adidas_Originals_Brand_Logo_PNG-removebg-preview.png">
+                    <img src="asset/icon/download-removebg-preview.png">
+                    <img src="asset/icon/Herzogenaurach_Puma_Adidas_Logo_PNG-removebg-preview.png">
+                    <img src="asset/icon/Under_Armour_Logo_PNG-removebg-preview.png">
+                </div>
+
+
+                <div class="swiper-slide client-slide">
+                    <img src="asset/icon/starbuck.png">
+                    <img src="asset/icon/toyoa.png">
+                    <img src="asset/icon/calvin.png">
+                    <img src="asset/icon/Playstation-removebg-preview.png">
+                </div>
+
+            </div>
+
+
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+        </div>
+    </div>
+  <!-- Klien -->
+
 
   <!-- FORM KONTAK -->
     <section id="contact" class="contact-section py-5">
@@ -323,8 +341,8 @@
 
                 <!-- Navigasi -->
                 <div class="col-12 col-md-6 col-lg-3 mb-4">
-                    <h5 class="footer-title">Navigasi</h5>
-                    <ul class="footer-list ms-1">
+                    <h5 class="footer-title ms-5">Navigasi</h5>
+                    <ul class="footer-list ms-5">
                         <li><a href="#">Beranda</a></li>
                         <li><a href="#service">Layanan</a></li>
                         <li><a href="#about">Tentang Kami</a></li>
@@ -334,7 +352,7 @@
 
                 <!-- Layanan -->
                 <div class="col-12 col-md-6 col-lg-3 mb-4">
-                    <h5 class="footer-title">Layanan</h5>
+                    <h5 class="footer-title ms-1">Layanan</h5>
                     <ul class="footer-list ms-1">
                         <li><a href="#service">Konsultasi Transformasi Digital</a></li>
                         <li><a href="#service">Analisis Sistem</a></li>
@@ -344,8 +362,8 @@
 
                 <!-- Kontak -->
                 <div class="col-12 col-md-6 col-lg-3 mb-4">
-                    <h5 class="footer-title">Kontak</h5>
-                    <ul class="footer-list">
+                    <h5 class="footer-title ms-2">Kontak</h5>
+                    <ul class="footer-list ms-1">
                         <li><i class="fa-solid fa-location-dot"></i> Bogor, Indonesia</li>
                         <li><i class="fa-solid fa-envelope"></i> alwihusein2807@gmail.com</li>
                         <li><i class="fa-solid fa-phone"></i> 0888-1332-064</li>
@@ -366,7 +384,12 @@
 
 
 
+    <!-- JS DATA AOS -->
+     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 
+     <script>
+    AOS.init();
+    </script>
     <!-- JavaScript Bootstrap -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
 

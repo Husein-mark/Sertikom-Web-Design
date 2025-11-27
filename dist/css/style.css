@@ -29,6 +29,9 @@
 .text{
     color: white;
 }
+.text span{
+    color: #E2852E;
+}
 .text1{
     color: white;
     text-align: start;
@@ -64,11 +67,13 @@
     text-align: start;
     font-size: 65px;
     margin-top: 10px;
+    color: #E2852E;
 }
 .project{
     font-size: 25px;
     margin-top: 10px;
     text-align: start;
+    color: white;
 }
 .title {
     margin-top: 50px;
@@ -80,7 +85,7 @@
 
 .daftar1{
     font-weight: bold;
-    background-color: #37474F;
+    background-color: #E2852E;
     border-radius: 5px;
     padding: 20px;
     padding-right:15px;
@@ -90,7 +95,7 @@
 }
 .daftar{
     font-weight: bold;
-    background-color: #37474F;
+    background-color: gray;
     border-radius: 5px;
     padding: 20px;
     padding-right:15px;
@@ -271,7 +276,7 @@ ul li i{
     background-color: #F9F8F6;
     border-radius: 5px;
     padding: 5px;
-    border-left: 5px solid #0B1D51;
+    border-left: 5px solid #E2852E;
 }
 .about-list li {
     display: flex;
@@ -714,20 +719,103 @@ ul li i{
 
 
     .swiper {
-      width: 100%;
-      height: 250px;
+        margin-top: 20px;
+        border-radius: 100px;
+        width: 55%;
+        height: 250px;
     }
     .swiper-slide {
       text-align: center;
       font-size: 18px;
-      background: #F9F8F6;
       display: flex;
       justify-content: center;
       align-items: center;
     }
 
     .swiper-slide img {
-      margin-top: 25px;
+      margin-top: 50px;
       width: 250px;
       height: 200px;
     }
+
+    .pricing-card {
+    border-radius: 18px;
+    transition: .3s ease;
+  }
+
+  .pricing-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.15);
+  }
+
+  .highlight-card {
+    border: 2px solid #0d6efd;
+    transform: scale(1.03);
+  }
+
+  .highlight-card:hover {
+    transform: scale(1.05);
+  }
+
+  .client-slide {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;       /* space antar logo */
+  padding: 20px 0;
+}
+
+.client-slide img {
+  width: 120px;
+  height: auto;
+  object-fit: contain;
+  transition: .3s ease;
+  filter: grayscale(100%);
+  opacity: 0.7;
+}
+
+.client-slide img:hover {
+  filter: grayscale(0%);
+  opacity: 1;
+  transform: scale(1.05);
+}
+
+/* Responsive */
+@media (max-width: 992px) {
+  .client-slide img {
+    width: 100px;
+  }
+}
+
+@media (max-width: 768px) {
+  .client-slide {
+    gap: 25px;
+  }
+  .client-slide img {
+    width: 80px;
+  }
+}
+
+@media (max-width: 500px) {
+  .client-slide {
+    gap: 15px;
+  }
+  .client-slide img {
+    width: 65px;
+  }
+}
+.typing-text {
+    border-right: 3px solid #333;
+    white-space: nowrap;
+    overflow: hidden;
+    display: inline-block;
+    animation: blink 0.7s infinite;
+    font-weight: 700;
+    color: #2b82ff; /* warna biru modern */
+}
+
+@keyframes blink {
+    0% { border-color: transparent; }
+    50% { border-color: #2b82ff; }
+    100% { border-color: transparent; }
+}
