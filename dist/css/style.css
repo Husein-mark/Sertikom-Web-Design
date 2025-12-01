@@ -95,12 +95,12 @@
 }
 .daftar{
     font-weight: bold;
-    background-color: gray;
+    background-color: #0B1D51;
     border-radius: 5px;
     padding: 20px;
     padding-right:15px;
     cursor: pointer;
-    margin-top: 1px;
+    margin-top: -1px;
 }
 .partner{
     width: 100%;
@@ -142,7 +142,7 @@
 }
  h3{
     text-align: center;
-    color: #37474F;
+    color: #0B1D51;
     font-weight: bold;
     margin-top: 100px;
     font-size: 50px;
@@ -253,70 +253,104 @@ ul li i{
     font-size: 15px;
 }
 
-/* Section Tentang Kami */
-.about-section {
-    padding: 80px 0;
+/* ================================
+   NEW ABOUT SECTION (DI TEMPAT BERBEDA)
+================================ */
+
+.about-section-new {
+    background: linear-gradient(135deg, #F4F4F9, #ffffff);
+    padding: 100px 0;
 }
 
-/* Paragraf */
-.about-text {
+.about-new-title {
+    font-size: 2.4rem;
+    color: #0B1D51;
+    text-align: left;
+}
+
+.about-new-desc {
     font-size: 1rem;
-    line-height: 1.7;
-    color: gray;
+    color: #555;
+    line-height: 1.8;
     margin-bottom: 15px;
 }
-.about-list {
+
+/* Info Box */
+.about-new-box {
+    background: white;
+    border-radius: 12px;
+    padding: 20px 25px;
+    border-right: 6px solid #E2852E;
+    margin-top: 25px;
+}
+
+.about-new-list {
     list-style: none;
+    margin: 0;
     padding: 0;
 }
-.about-title{
-    margin-top: 100px;
-}
-.containerabout{
-    background-color: #F9F8F6;
-    border-radius: 5px;
-    padding: 5px;
-    border-left: 5px solid #E2852E;
-}
-.about-list li {
+
+.about-new-list li {
+    font-size: 1rem;
+    color: #444;
+    margin: 12px 0;
     display: flex;
     align-items: center;
-    font-size: 1rem;
-    margin-bottom: 10px;
-    color: #444;
 }
-.about-list li i {
+
+.about-new-list li i {
+    color: #092040;
+    margin-right: 10px;
     font-size: 1.2rem;
-    color: #0B1D51;
-    margin-right: 10px;
 }
-.about-img-box img {
+
+/* Image Right */
+.about-new-image-wrapper {
+    display: flex;
+    justify-content: center;
+}
+
+.about-new-image {
     width: 100%;
+    max-width: 500px;
+    height: 420px;
     object-fit: cover;
-    border-radius: 15px;
-    margin-top: 100px;
-    margin-right: 10px;
-    height: 500px;;
+    border-radius: 18px;
 }
+
+/* Responsive */
 @media (max-width: 992px) {
-    .about-title,
-    .about-text {
+    .about-new-title {
+        text-align: left;
+    }
+
+    .about-new-desc {
         text-align: center;
     }
 
-    .about-list li {
-        justify-content: center;
-    }
-}
-@media (max-width: 576px) {
-    .about-title {
-        font-size: 1.8rem;
+    .about-new-box {
+        margin: 20px auto;
     }
 
-    .about-text {
-        font-size: .95rem;
+    .about-new-list li {
+        justify-content: start;
+    }
+
+    .about-new-image {
+        height: 350px;
     }
 }
+
+@media (max-width: 576px) {
+    .about-new-title {
+        font-size: 1.8rem;
+        text-align: center;
+    }
+    .about-new-image {
+        height: 260px;
+    }
+}
+
 
 
 .contact-section {
@@ -749,7 +783,7 @@ ul li i{
   }
 
   .highlight-card {
-    border: 2px solid #0d6efd;
+    border: 2px solid #0B1D51;
     transform: scale(1.03);
   }
 
@@ -811,11 +845,90 @@ ul li i{
     display: inline-block;
     animation: blink 0.7s infinite;
     font-weight: 700;
-    color: #2b82ff; /* warna biru modern */
+    color: #0B1D51; /* warna biru modern */
 }
 
 @keyframes blink {
     0% { border-color: transparent; }
-    50% { border-color: #2b82ff; }
+    50% { border-color: #0B1D51; }
     100% { border-color: transparent; }
 }
+/* ==========================
+       TESTIMONIAL SECTION
+========================== */
+
+.testimonial-section {
+    background: #F9F9FB;
+    padding: 100px 0;
+}
+
+.testimonial-subtitle {
+    font-size: 1rem;
+    color: #666;
+    margin-top: 8px;
+}
+
+/* CARD */
+.testimonial-card {
+    background: #ffffff;
+    padding: 40px 25px 30px;
+    border-radius: 20px;
+    height: 100%;
+    transition: 0.25s ease;
+}
+
+.testimonial-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 28px rgba(0,0,0,0.08);
+}
+
+/* FOTO DI ATAS */
+.client-photo-top {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 3px solid #0B1D51;
+    margin-bottom: 20px;
+}
+
+/* Text */
+.testimonial-text {
+    font-size: 1rem;
+    color: #444;
+    font-style: italic;
+    line-height: 1.7;
+    margin-bottom: 25px;
+}
+
+.client-name {
+    font-size: 1.1rem;
+    color: #0B1D51;
+    font-weight: 700;
+    margin-bottom: 2px;
+}
+
+.client-role {
+    font-size: 0.9rem;
+    color: #777;
+}
+
+/* ==========================
+        RESPONSIVE
+========================== */
+
+@media (max-width: 576px) {
+    .testimonial-card {
+        padding: 30px 22px;
+    }
+
+    .client-photo-top {
+        width: 70px;
+        height: 70px;
+    }
+
+    .testimonial-title {
+        font-size: 1.7rem;
+    }
+}
+
