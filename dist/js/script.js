@@ -77,4 +77,35 @@ function typeEffect() {
 
 window.onload = typeEffect;
 
+// Ambil semua link navbar
+const navLinks = document.querySelectorAll('.navbar-nav .nav-link');
+
+// Tambahkan event click untuk smooth scroll dan highlight
+navLinks.forEach(link => {
+    link.addEventListener('click', function(e) {
+        e.preventDefault(); // mencegah jump langsung
+        const targetId = this.getAttribute('href'); // ambil id target
+        const targetSection = document.querySelector(targetId);
+
+        // scroll ke section dengan smooth
+        targetSection.scrollIntoView({ behavior: 'smooth', block: 'start' });
+
+        // hapus kelas active di semua link
+        navLinks.forEach(l => l.classList.remove('active'));
+        // tambahkan kelas active pada link yang diklik
+        this.classList.add('active');
+    });
+});
+
+// Opsional: highlight menu saat scroll
+window.addEventListener('scroll', () => {
+    const scrollPos = window.scrollY + 100; // offset 100px agar terlihat pas
+    navLinks.forEach(link => {
+        const section = document.querySelector(link.getAttribute('href'));
+        if(section.offsetTop <= scrollPos && (section.offsetTop + section.offsetHeight) > scrollPos){
+            navLinks.forEach(l => l.classList.remove('active'));
+            link.classList.add('active');
+        }
+    });
+});
 

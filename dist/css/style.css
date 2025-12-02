@@ -317,7 +317,68 @@ ul li i{
     object-fit: cover;
     border-radius: 18px;
 }
+@media (max-width: 1400px) {
+    /* Navbar */
+    .nav-item-head{
+        margin-left: 350px; /* kurangi agar pas */
+    }
 
+    /* Hero Section */
+    .hero {
+        height: auto; /* biar fleksibel */
+        padding: 100px 20px; /* beri ruang atas dan bawah */
+        text-align: left; /* center semua isi hero */
+    }
+
+    .hero h1 {
+        margin-top: 20px;
+        margin-left: 0; /* hapus margin kiri besar */
+        font-size: 40px;
+    }
+
+    .text1 {
+        margin-left: 0; /* text rapi di tengah */
+        font-size: 16px;
+        margin-top: 15px;
+    }
+
+    /* Kotak WA */
+    .kotakWA {
+        justify-content: left;
+        margin-top: 30px;
+    }
+
+    .daftar1,
+    .daftar {
+        margin-left: 10px; /* center button */
+        padding: 15px 20px;
+        font-size: 14px;
+    }
+
+    /* Header Card */
+    .header {
+        width: 90%;
+        max-width: 400px; /* biar tidak terlalu besar */
+        margin: 20px auto; /* center */
+        height: auto;
+        padding: 20px;
+    }
+
+    .persen {
+        font-size: 50px;
+        text-align: center;
+    }
+
+    .project {
+        font-size: 22px;
+        text-align: center;
+    }
+
+    .title {
+        font-size: 16px;
+        text-align: center;
+    }
+}
 /* Responsive */
 @media (max-width: 992px) {
     .about-new-title {
@@ -418,7 +479,7 @@ ul li i{
 /* ============================
    RESPONSIVE TABLET (max-width: 992px)
    ============================ */
-@media (max-width: 992px) {
+@media (max-width: 1000px) {
 
     /* NAVBAR */
     .nav-item-head {
@@ -448,7 +509,6 @@ ul li i{
     }
 
     .header {
-        margin: 0 auto;
         width: 280px;
         height: auto;
         padding: 25px;
@@ -714,10 +774,13 @@ ul li i{
 /* Tablet */
 @media (max-width: 992px) {
     .footer-brand {
-        text-align: center;
+        text-align: left;
+    }
+    .footer-text{
+        text-align: left;
     }
     .footer-sosmed {
-        text-align: center;
+        text-align: left;
     }
 }
 
@@ -725,11 +788,17 @@ ul li i{
 @media (max-width: 576px) {
 
     .footer-section {
-        text-align: center;
+        text-align: left;
     }
 
     .footer-list li {
         font-size: 14px;
+    }
+    .footer-title{
+        text-align: left;
+    }
+    .footer-list{
+        text-align: left;
     }
 
     .footer-sosmed i {
@@ -930,5 +999,332 @@ ul li i{
     .testimonial-title {
         font-size: 1.7rem;
     }
+
+    h3{
+        font-size: 1.7rem;
+    }
+
+    .textlayanan{
+        font-size: 1.7rem;
+    }
 }
 
+/* ============================================================
+   RESPONSIVE UNIVERSAL FIX - TABLET & HP
+   ============================================================ */
+
+/* =========================
+   TABLET (max-width: 992px)
+   ========================= */
+@media (max-width: 992px) {
+
+    /* NAVBAR */
+    .nav-item-head {
+        margin-left: 0 !important;
+    }
+
+    /* HERO */
+    .hero h1 {
+        margin-left: 0 !important;
+        text-align: center;
+        font-size: 36px;
+    }
+
+    .text1 {
+        margin-left: 0 !important;
+        text-align: center;
+        font-size: 18px;
+    }
+
+    .header {
+        margin-left: 250 !important;
+        margin-top: 40px;
+        width: 80% !important;
+        height: auto !important;
+    }
+
+    .kotakWA {
+        justify-content: center;
+        gap: 20px;
+    }
+
+    .daftar1,
+    .daftar {
+        margin-left: 0 !important;
+    }
+
+    /* PARTNER */
+    .sponsor {
+        margin-left: 0 !important;
+        width: 100% !important;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 30px !important;
+    }
+
+    /* LAYANAN */
+    .containerlayanan {
+        flex-direction: column !important;
+        gap: 20px !important;
+    }
+
+    .layanan,
+    .layanan1,
+    .layanan2 {
+        width: 90% !important;
+        height: auto !important;
+        margin-left: auto !important;
+        margin-right: auto !important;
+    }
+
+    .tekslayanan {
+        font-size: 18px !important;
+    }
+
+    /* ABOUT */
+    .about-section-new {
+        text-align: center;
+    }
+    .about-new-title {
+        text-align: center;
+    }
+    .about-new-image-wrapper {
+        margin-top: 20px;
+    }
+
+    /* CONTACT */
+    .contact-section {
+        padding: 50px 0;
+    }
+
+    .contact-form {
+        margin-top: 20px;
+    }
+
+    /* SLIDER */
+    .swiper {
+        width: 80% !important;
+    }
+}
+
+/* =========================
+   MOBILE (max-width: 576px)
+   ========================= */
+@media (max-width: 576px) {
+
+    /* NAVBAR */
+    .navbar {
+        height: auto !important;
+        padding: 10px 0 !important;
+    }
+
+    /* HERO */
+    .hero {
+        padding: 130px 20px 60px !important;
+        height: auto !important;
+    }
+
+    .hero h1 {
+        font-size: 28px !important;
+        margin-left: 0 !important;
+        line-height: 36px;
+        text-align: center;
+    }
+
+    .text1 {
+        margin-left: 0 !important;
+        text-align: center !important;
+        font-size: 15px !important;
+    }
+
+    .header {
+        width: 90% !important;
+        margin-left: auto !important;
+        margin-right: auto !important;
+        height: auto !important;
+    }
+
+    .persen {
+        font-size: 45px !important;
+    }
+
+    .project {
+        font-size: 18px !important;
+    }
+
+    /* TOMBOL */
+    .kotakWA {
+        flex-direction: column !important;
+        align-items: center;
+    }
+
+    .daftar1,
+    .daftar {
+        width: 80% !important;
+        text-align: center !important;
+        padding: 14px !important;
+    }
+
+    /* PARTNER */
+    .partner-head {
+        font-size: 30px !important;
+    }
+
+    .sponsor {
+        width: 100% !important;
+        gap: 15px !important;
+        margin-left: 0 !important;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .sponsor img {
+        width: 35% !important;
+    }
+
+    /* LAYANAN */
+    .containerlayanan {
+        flex-direction: column !important;
+        gap: 20px !important;
+    }
+
+    .layanan,
+    .layanan1,
+    .layanan2 {
+        width: 90% !important;
+        height: auto !important;
+        margin-left: auto !important;
+        margin-right: auto !important;
+    }
+
+    .tekslayanan {
+        font-size: 18px !important;
+    }
+
+    /* ABOUT */
+    .about-new-title {
+        font-size: 26px !important;
+    }
+
+    .about-new-image {
+        height: 260px !important;
+    }
+
+    /* CONTACT */
+    .contact-section {
+        margin-top: 50px !important;
+    }
+
+    .contact-form {
+        padding: 20px !important;
+    }
+
+    /* FOOTER */
+    .footer-section {
+        text-align: center !important;
+    }
+
+    /* SWIPER */
+    .swiper {
+        width: 95% !important;
+        height: 200px !important;
+    }
+
+    .swiper-slide img {
+        width: 150px !important;
+        height: 120px !important;
+        margin-top: 20px !important;
+    }
+}
+/* ================================
+   KECILKAN GAMBAR "KLIEN KAMI"
+   ================================ */
+
+/* Laptop & Desktop */
+.client-slide img {
+    width: 90px !important;
+    opacity: 0.85;
+}
+
+/* Tablet */
+@media (max-width: 992px) {
+    .client-slide img {
+        width: 100px !important;
+    }
+}
+
+/* HP */
+@media (max-width: 576px) {
+    .client-slide img {
+        width: 55px !important;
+    }
+}
+
+/* =======================================
+   LAYANAN KAMI – TABLET MIRIP HP
+   ======================================= */
+@media (max-width: 992px) {
+
+    .containerlayanan {
+        display: flex !important;
+        flex-direction: column !important;
+        align-items: center !important;
+        gap: 20px !important;
+        margin-top: 30px !important;
+    }
+
+    .layanan,
+    .layanan1,
+    .layanan2 {
+        width: 90% !important;        /* satu kolom full width */
+        height: auto !important;
+        margin-left: 0 !important;
+        margin-right: 0 !important;
+        padding-bottom: 20px !important;
+    }
+
+    .tekslayanan {
+        text-align: center !important;
+        margin-left: 0 !important;
+    }
+
+    .p {
+        text-align: center !important;
+    }
+
+    .pilih {
+        width: 80% !important;
+        margin: 10px auto !important;
+    }
+}
+/* ================================
+   RESPONSIVE LAYANAN – TABLET (1 KOLOM)
+   ================================ */
+@media (max-width: 992px) {
+
+    h3{
+        font-size: xx-large;
+    }
+    #service .row > div {
+        flex: 0 0 100% !important;
+        max-width: 100% !important;
+    }
+
+    #service .card {
+        width: 90% !important;
+        margin: auto !important;  
+    }
+
+    #service h2 {
+        font-size: 1.8rem;
+    }
+
+    #service p.text-muted {
+        font-size: 0.95rem;
+    }
+
+    #service .badge {
+        margin-left: 0 !important;
+        display: inline-block;
+    }
+}
